@@ -4,11 +4,11 @@ class FoodQueue {
   }
 
   enqueue(item) {
-    return this.queue.unshift(item);
+    return this.queue.push(item);
   }
 
   dequeue() {
-    return this.queue.pop();
+    return this.queue.shift();
   }
 
   hasNext() {
